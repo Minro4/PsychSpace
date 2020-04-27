@@ -6,4 +6,7 @@ public interface IMovement
 {
     void Rotate(float amount);
 
+    void Boost(float amount);
+
+    void Boost(float amount, float time); //Amount / sec
 }

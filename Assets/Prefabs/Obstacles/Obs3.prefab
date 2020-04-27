@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7144794531241956014}
   - component: {fileID: 2028972477288271618}
   - component: {fileID: 1114346783328720604}
+  - component: {fileID: 7903083356288487919}
   m_Layer: 0
   m_Name: Obstacle (3)
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6578222774316670338}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 8, y: 15, z: 2}
   m_Children: []
   m_Father: {fileID: 6420513647933981439}
@@ -120,11 +121,27 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6578222774316670338}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7903083356288487919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6578222774316670338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7d7ffb41ff2614a92725e273b6caba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostAmount: -1
+  speedPercAmount: -0.85
+  boostOverTime: 0
+  time: 0
 --- !u!1 &8314856387796704011
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +154,7 @@ GameObject:
   - component: {fileID: 8360606923290169595}
   - component: {fileID: 2572209033729676807}
   - component: {fileID: 3313522375355143239}
+  - component: {fileID: 781367619156627099}
   m_Layer: 0
   m_Name: Obstacle (2)
   m_TagString: Untagged
@@ -152,7 +170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8314856387796704011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 15, z: 2}
   m_Children: []
   m_Father: {fileID: 6420513647933981439}
@@ -213,8 +231,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8314856387796704011}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &781367619156627099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8314856387796704011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7d7ffb41ff2614a92725e273b6caba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostAmount: -1
+  speedPercAmount: -0.85
+  boostOverTime: 0
+  time: 0

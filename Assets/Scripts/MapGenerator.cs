@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
 {
-    public float tempo; //BPM
+    public float distance; //BPM
 
     public int obsForwardCount = 100;
 
@@ -13,19 +13,17 @@ public class MapGenerator : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        var speed = GetComponent<TunnelMovement>().forwardSpeed;
-        GenerateMap(speed);
+        GenerateMap();
     }
 
     // Update is called once per frame
-    private void GenerateMap(float speed )//unit/sec
+    private void GenerateMap( )//unit/sec
     {
-        var waitTime = 60 / tempo;
-        var dist = waitTime * speed;
+    
 
         for (int i = 1; i <= obsForwardCount; i++)
         {
-            InstObs(Vector3.forward * i * dist);
+            InstObs(Vector3.forward * i * distance);
         }
         
     }

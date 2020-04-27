@@ -17,7 +17,10 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        var h =  horizontalSpeed * Input.GetAxisRaw("Horizontal") * Time.deltaTime;
+        // var h =  horizontalSpeed * Input.GetAxisRaw("Horizontal") * Time.deltaTime;
+        // movement.Rotate(h);
+
+        var h = horizontalSpeed * Input.GetAxis("Mouse X");
         movement.Rotate(h);
     }
 }
