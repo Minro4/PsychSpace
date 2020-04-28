@@ -9,4 +9,5 @@ public interface IMovement
     void Boost(float amount);
 
     void Boost(float amount, float time); //Amount / sec
+    void TempBoost(float amount, float time);
 }

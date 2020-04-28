@@ -107,6 +107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostAmount: 10
-  speedPercAmount: 0.15
-  boostOverTime: 0
-  time: 1
+  speedPercAmount: 0
+  boostOverTimeAmount: 10
+  speedPercOverTimeAmount: 0.035
+  time: 0.5
+  tempBoost: 0
+  tempBoostTime: 0
