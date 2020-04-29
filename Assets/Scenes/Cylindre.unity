@@ -1020,7 +1020,7 @@ Rigidbody:
   m_GameObject: {fileID: 1128213428}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.1
+  m_Drag: 0.16
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -1086,12 +1086,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c01f468a4302342b41a6631651aa4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 55
+  distance: 50
   obsForwardCount: 300
   obsPrefabs:
   - {fileID: 3722658338053464494, guid: 9fa6b215725b25548a23d04ed42ad1b2, type: 3}
   - {fileID: 7156813609275895125, guid: 7afd165269da0da46a2eef08ab490231, type: 3}
   - {fileID: 3994442709314755799, guid: 47d76ecff2b52dc499c438a98156b642, type: 3}
+  - {fileID: 3994442709314755799, guid: ec0ee19496c320b45b79450f5ca62d11, type: 3}
   - {fileID: 6619963511493778503, guid: 9b6f4ba39ea7aff4588f8b35997eb52f, type: 3}
 --- !u!1 &1170950061
 GameObject:
@@ -1151,7 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHeadStart: 1200
-  darknessSpeed: 90
+  darknessSpeed: 75
   player: {fileID: 1128213432}
   slider: {fileID: 1805173510}
   deathScreen: {fileID: 1421262671}
@@ -1448,9 +1449,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: c6d92f5303c10b04fb14c25036422df8,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 07255993e1838c749b1121e6f7cdaa2a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2f4451707de4f1743ac8b1ec3073a395, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
