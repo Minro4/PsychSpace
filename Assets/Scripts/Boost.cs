@@ -24,7 +24,7 @@ public class Boost : MonoBehaviour
 
         var instantBoost = boostAmount + other.GetComponent<Rigidbody>().velocity.z * speedPercAmount;
         var boostOverTime = boostOverTimeAmount + other.GetComponent<Rigidbody>().velocity.z * speedPercOverTimeAmount;
-        Debug.Log("Boost over time "+ boostOverTime);
+       // Debug.Log("Boost over time "+ boostOverTime);
         acc.Boost(instantBoost);
         acc.Boost(boostOverTime, time);
         acc.TempBoost(tempBoost,tempBoostTime);

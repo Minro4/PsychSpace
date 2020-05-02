@@ -1454,7 +1454,7 @@ AudioSource:
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -2562,8 +2562,8 @@ GameObject:
   - component: {fileID: 1970286557}
   - component: {fileID: 1970286556}
   - component: {fileID: 1970286555}
-  - component: {fileID: 1970286553}
   - component: {fileID: 1970286558}
+  - component: {fileID: 1970286554}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -2571,7 +2571,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1970286553
+--- !u!114 &1970286554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2580,9 +2580,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1970286552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce339ab0dc6f91a43ac94dab34b65805, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cf73de1a053e5c41b1432d449ab2f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spacing: 2
+  autoUpdate: 0
+  size: 4
+  length: 2000
+  nbrVertsPer: 30
+  center: {x: 0, y: 0, z: 0}
 --- !u!23 &1970286555
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2637,13 +2643,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970286552}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 10, y: 20000, z: 10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1136657089}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1970286558
 MonoBehaviour:
   m_ObjectHideFlags: 0
