@@ -142,6 +142,8 @@ Material:
     - Vector1_C92E0FD0: 0.001
     - Vector1_C9872AA7: 0
     - Vector1_D32FD288: 120
+    - Vector1_D3D86FDD: 0
+    - Vector1_D9123D9F: 0
     - Vector1_F9EFD6A5: 10
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -272,6 +274,7 @@ Material:
     - Color_AEF32B4E: {r: 1, g: 0.17699385, b: 0, a: 1}
     - Vector2_B286CE39: {r: 1, g: 1, b: 0, a: 0}
     - Vector3_5BFAC3B5: {r: 0, g: 0, b: 0, a: 0}
+    - Vector3_WarpCenter: {r: -1.1914713, g: -0.74878484, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 0.11320752, b: 0.11320752, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 0.1132075, b: 0.1132075, a: 1}

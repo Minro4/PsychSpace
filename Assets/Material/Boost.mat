@@ -21,13 +21,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Boost
-  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
-  m_LightmapFlags: 1
+  m_Shader: {fileID: -6465566751694194690, guid: 98260f40968ed95498cbb11ee5dd2430,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
-  stringTagMap: {}
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
@@ -122,6 +124,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_73310465: 40
+    - Vector1_C92E0FD0: 0.001
+    - Vector1_C9872AA7: 0
+    - Vector1_D32FD288: 120
+    - Vector1_D3D86FDD: 0
+    - Vector1_D9123D9F: 50
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -200,6 +208,8 @@ Material:
     - _PPDPrimitiveWidth: 1
     - _ReceivesSSR: 1
     - _RefractionModel: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
     - _SSRefractionProjectionModel: 0
     - _Smoothness: 0
     - _SmoothnessRemapMax: 1
@@ -242,6 +252,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - Color_1F1308E: {r: 0, g: 1, b: 0.5966501, a: 1}
+    - Color_2006DF10: {r: 0.18323362, g: 1, b: 0, a: 1}
+    - Vector3_WarpCenter: {r: -1.1914713, g: -0.74878484, b: 0, a: 0}
     - _BaseColor: {r: 0.1037735, g: 1, b: 0.1037735, a: 0.007843138}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.10377347, g: 1, b: 0.10377347, a: 0.007843138}
