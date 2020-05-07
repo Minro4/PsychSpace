@@ -34,6 +34,13 @@ public class Darkness : MonoBehaviour
         }
 
         slider.value = 1 - (player.position.z - shadowPos) / 1500;
+
+        if (player.position.z > 15000)
+        {
+            isDead = true;
+            deathScreen.SetActive(true);
+            StartCoroutine(OnDeath());
+        }
     }
 
 

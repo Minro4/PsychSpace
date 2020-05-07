@@ -5,9 +5,6 @@ using UnityEngine;
 
 public interface IObstacle
 {
-    /// <returns>
-    /// int -> Length
-    /// float -> End angle
-    /// </returns>
-    Tuple<float,float> Instantiate(float difficulty, float zPos,float angle , float length);
+
+    ObstacleInfo Instantiate(float difficulty, ObstacleInfo info);
 }

@@ -1020,7 +1020,7 @@ Rigidbody:
   m_GameObject: {fileID: 1128213428}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.16
+  m_Drag: 0.18
   m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -1040,7 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerRotation: {fileID: 1522955294}
-  acceleration: 10
+  acceleration: 12
   minSpeed: 0
 --- !u!1 &1136657086
 GameObject:
@@ -1087,11 +1087,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 50
-  obsForwardCount: 20
+  obsForwardCount: 80
   obsPrefabs:
   - {fileID: 3994442709314755799, guid: ec0ee19496c320b45b79450f5ca62d11, type: 3}
-  - {fileID: 6619963511493778503, guid: 9b6f4ba39ea7aff4588f8b35997eb52f, type: 3}
   - {fileID: 3722658338053464494, guid: 9fa6b215725b25548a23d04ed42ad1b2, type: 3}
+  - {fileID: 3994442709314755799, guid: 47d76ecff2b52dc499c438a98156b642, type: 3}
+  boostPrefab: {fileID: 6619963511493778503, guid: 9b6f4ba39ea7aff4588f8b35997eb52f,
+    type: 3}
 --- !u!1 &1170950061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,12 +1449,12 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: c6d92f5303c10b04fb14c25036422df8,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2f4451707de4f1743ac8b1ec3073a395, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b9ddfe25233c6ab4a8b36f6044a619c4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
-  Mute: 1
+  Loop: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -1704,7 +1706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.26415092, g: 0, b: 0, a: 0.6392157}
+  m_Color: {r: 0.061895292, g: 0.2627451, b: 0, a: 0.6392157}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1782,7 +1784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOL U DED
+  m_text: J'AIME LE POISSON
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1851,7 +1853,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1452748001}
-    characterCount: 9
+    characterCount: 17
     spriteCount: 0
     spaceCount: 2
     wordCount: 3
@@ -2582,14 +2584,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81abfd8d283766e4d9bf2c10a15eeaae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerFavoritism: 10
-  range: 5
+  centerFavoritism: 8
+  range: 5.5
   baseTime: 300
   player: {fileID: 1128213432}
   warpingMats:
   - {fileID: 2100000, guid: b7c8a2b9727887c4ea787b6a172ba8a6, type: 2}
   - {fileID: 2100000, guid: b8844cfe661b3114db6172ba7e54e374, type: 2}
   - {fileID: 2100000, guid: 3bd01841963bc41458d6af3578e62b78, type: 2}
+  - {fileID: 2100000, guid: f82e4f96cc919fa4ba3b6a150ea06daf, type: 2}
+  - {fileID: 2100000, guid: e44d9f8534b7c384c9e469550e1c509c, type: 2}
+  - {fileID: 2100000, guid: 17d12e660d5c6f84e8aa458c04be049f, type: 2}
+  - {fileID: 2100000, guid: dfd502ecb24076c43a469f3083e3e75f, type: 2}
+  - {fileID: 2100000, guid: cddc50f8e2b36734cb841d6c96a5fd94, type: 2}
 --- !u!114 &1970286554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2605,7 +2612,7 @@ MonoBehaviour:
   spacing: 2
   autoUpdate: 0
   size: 4
-  length: 2000
+  length: 6000
   nbrVertsPer: 30
   center: {x: 0, y: 0, z: 0}
 --- !u!23 &1970286555
@@ -2626,7 +2633,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7c8a2b9727887c4ea787b6a172ba8a6, type: 2}
+  - {fileID: 2100000, guid: dfd502ecb24076c43a469f3083e3e75f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
