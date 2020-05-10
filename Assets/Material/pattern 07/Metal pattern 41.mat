@@ -317,7 +317,7 @@ Material:
     - Color_AEF32B4E: {r: 0, g: 1, b: 0.0702703, a: 0}
     - Vector2_B286CE39: {r: 3.44, g: 1600, b: 0, a: 0}
     - Vector3_EEB660B1: {r: 1, g: 0, b: 0, a: 0}
-    - Vector3_WarpCenter: {r: -0.02628465, g: -0.013219161, b: 0, a: 0}
+    - Vector3_WarpCenter: {r: -1.3843161, g: -1.164937, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 0.82402074, b: 0, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 0.82402074, b: 0, a: 1}
